@@ -1,0 +1,24 @@
+{
+  "name": "github-api-open",
+  "version": "0.0.1",
+  "description": "Open the API page of a Github repository",
+  "scripts": {
+    "build-local": "node -r dotenv/config -r ts-node/register esbuild.ts --local && cp -r static/* out-local",
+    "watch-local": "mkdir -p out-local && cp -r static/* out-local && node -r dotenv/config -r ts-node/register esbuild.ts --local --watch",
+    "build-prod": "node -r dotenv/config -r ts-node/register esbuild.ts --prod && cp -r static/* out-prod",
+    "watch-prod": "mkdir -p out-prod && cp -r static/* out-prod && node -r dotenv/config -r ts-node/register esbuild.ts --prod --watch",
+    "bump-extension-versions": "node -r ts-node/register scripts/bump-extension-versions.ts"
+  },
+  "keywords": [
+    "github",
+    "api",
+    "extension"
+  ],
+  "author": "Vivek Nair",
+  "license": "MIT",
+  "devDependencies": {
+    "fs": "0.0.1-security",
+    "prettier": "^2.8.7",
+    "semver": "^7.4.0"
+  }
+}
