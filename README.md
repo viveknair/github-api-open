@@ -17,7 +17,7 @@ This extension enhances your GitHub browsing experience by allowing you to quick
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/github-api-open.git
+git clone https://github.com/viveknair/github-api-open.git
 cd github-api-open
 ```
 
